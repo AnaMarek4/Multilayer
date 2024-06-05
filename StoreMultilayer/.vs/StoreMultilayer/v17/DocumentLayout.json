@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Multilayer\\StoreMultilayer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Multilayer\\StoreMultilayer\\ClassLibrary1.Common\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary1.Common\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1F9ADA3C-9D1B-4AED-B955-E64F699135AC}|Store.Model\\Store.Model.csproj|d:\\multilayer\\storemultilayer\\store.model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F9ADA3C-9D1B-4AED-B955-E64F699135AC}|Store.Model\\Store.Model.csproj|solutionrelative:store.model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Multilayer\\StoreMultilayer\\ClassLibrary1.Common\\Class1.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1.Common\\Class1.cs",
+              "ToolTip": "D:\\Multilayer\\StoreMultilayer\\ClassLibrary1.Common\\Class1.cs",
+              "RelativeToolTip": "ClassLibrary1.Common\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T21:11:14.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Multilayer\\StoreMultilayer\\Store.Model\\Product.cs",
               "RelativeDocumentMoniker": "Store.Model\\Product.cs",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "D:\\Multilayer\\StoreMultilayer\\Store.WebAPI\\ProductRepository.cs",
               "RelativeDocumentMoniker": "Store.WebAPI\\ProductRepository.cs",
@@ -67,12 +84,11 @@
               "RelativeToolTip": "Store.WebAPI\\ProductRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAYwBQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T20:03:40.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T20:03:40.919Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StoreRepository.cs",
               "DocumentMoniker": "D:\\Multilayer\\StoreMultilayer\\Store.Repository\\StoreRepository.cs",
               "RelativeDocumentMoniker": "Store.Repository\\StoreRepository.cs",
@@ -80,12 +96,11 @@
               "RelativeToolTip": "Store.Repository\\StoreRepository.cs",
               "ViewState": "AQIAAFUAAAAAAAAAAAAAwF4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T20:17:27.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T20:17:27.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "D:\\Multilayer\\StoreMultilayer\\Store.Repository\\ProductRepository.cs",
               "RelativeDocumentMoniker": "Store.Repository\\ProductRepository.cs",
@@ -93,12 +108,11 @@
               "RelativeToolTip": "Store.Repository\\ProductRepository.cs",
               "ViewState": "AQIAAHkAAAAAAAAAAAAAwIIAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T18:16:59.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T18:16:59.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Store.WebAPI.http",
               "DocumentMoniker": "D:\\Multilayer\\StoreMultilayer\\Store.WebAPI\\Store.WebAPI.http",
               "RelativeDocumentMoniker": "Store.WebAPI\\Store.WebAPI.http",
@@ -106,12 +120,11 @@
               "RelativeToolTip": "Store.WebAPI\\Store.WebAPI.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-06-05T20:10:19.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T20:10:19.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Multilayer\\StoreMultilayer\\Store.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "Store.WebAPI\\Program.cs",
@@ -119,12 +132,11 @@
               "RelativeToolTip": "Store.WebAPI\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAkwAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T19:52:34.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T19:52:34.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Multilayer\\StoreMultilayer\\Store.WebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "Store.WebAPI\\appsettings.json",
@@ -132,12 +144,11 @@
               "RelativeToolTip": "Store.WebAPI\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-05T19:52:09.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T19:52:09.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\Multilayer\\StoreMultilayer\\Store.Service\\ProductService.cs",
               "RelativeDocumentMoniker": "Store.Service\\ProductService.cs",
@@ -145,8 +156,7 @@
               "RelativeToolTip": "Store.Service\\ProductService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAUwBYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T19:23:09.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T19:23:09.457Z"
             }
           ]
         }
