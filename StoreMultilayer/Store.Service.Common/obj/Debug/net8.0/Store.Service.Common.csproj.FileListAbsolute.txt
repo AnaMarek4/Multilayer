@@ -1,0 +1,16 @@
+D:\Multilayer\StoreMultilayer\Store.Service.Common\bin\Debug\net8.0\Store.Service.Common.deps.json
+D:\Multilayer\StoreMultilayer\Store.Service.Common\bin\Debug\net8.0\Store.Service.Common.dll
+D:\Multilayer\StoreMultilayer\Store.Service.Common\bin\Debug\net8.0\Store.Service.Common.pdb
+D:\Multilayer\StoreMultilayer\Store.Service.Common\bin\Debug\net8.0\Store.Model.dll
+D:\Multilayer\StoreMultilayer\Store.Service.Common\bin\Debug\net8.0\Store.Model.pdb
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\Store.Service.Common.csproj.AssemblyReference.cache
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\Store.Service.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\Store.Service.Common.AssemblyInfoInputs.cache
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\Store.Service.Common.AssemblyInfo.cs
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\Store.Service.Common.csproj.CoreCompileInputs.cache
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\Store.Service.Common.sourcelink.json
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\Store.Se.F31C73CA.Up2Date
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\Store.Service.Common.dll
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\refint\Store.Service.Common.dll
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\Store.Service.Common.pdb
+D:\Multilayer\StoreMultilayer\Store.Service.Common\obj\Debug\net8.0\ref\Store.Service.Common.dll

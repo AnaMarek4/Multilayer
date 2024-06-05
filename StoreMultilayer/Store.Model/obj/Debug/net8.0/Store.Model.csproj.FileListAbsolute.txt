@@ -1,0 +1,13 @@
+D:\Multilayer\StoreMultilayer\Store.Model\bin\Debug\net8.0\Store.Model.deps.json
+D:\Multilayer\StoreMultilayer\Store.Model\bin\Debug\net8.0\Store.Model.dll
+D:\Multilayer\StoreMultilayer\Store.Model\bin\Debug\net8.0\Store.Model.pdb
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\Store.Model.csproj.AssemblyReference.cache
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\Store.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\Store.Model.AssemblyInfoInputs.cache
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\Store.Model.AssemblyInfo.cs
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\Store.Model.csproj.CoreCompileInputs.cache
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\Store.Model.sourcelink.json
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\Store.Model.dll
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\refint\Store.Model.dll
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\Store.Model.pdb
+D:\Multilayer\StoreMultilayer\Store.Model\obj\Debug\net8.0\ref\Store.Model.dll
