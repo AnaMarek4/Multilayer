@@ -20,3 +20,5 @@ D:\Multilayer\StoreMultilayer\Store.Service\obj\Debug\net8.0\Store.Service.dll
 D:\Multilayer\StoreMultilayer\Store.Service\obj\Debug\net8.0\refint\Store.Service.dll
 D:\Multilayer\StoreMultilayer\Store.Service\obj\Debug\net8.0\Store.Service.pdb
 D:\Multilayer\StoreMultilayer\Store.Service\obj\Debug\net8.0\ref\Store.Service.dll
+D:\Multilayer\StoreMultilayer\Store.Service\bin\Debug\net8.0\Store.Common.dll
+D:\Multilayer\StoreMultilayer\Store.Service\bin\Debug\net8.0\Store.Common.pdb

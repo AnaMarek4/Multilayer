@@ -2,6 +2,7 @@
 using Npgsql;
 using Store.Model;
 using Store.Service;
+using Store.Common;
 
 namespace Store.WebAPI.Controllers
 {
@@ -16,27 +17,17 @@ namespace Store.WebAPI.Controllers
             this.productService = new ProductService(configuration.GetConnectionString("DefaultConnection"));
         }
 
-        [HttpGet("products")]
-        public async Task<IActionResult> GetAll()
+        [HttpGet("products/")]
+        public async Task<IActionResult> Get(Guid? productId = null, string name = "", double? minPrice = null, double? maxPrice = null, string orderBy = "Price", string sortOrder = "DESC", int rpp = 10, int pageNumber = 1)
         {
             try
             {
-                ICollection<Product> products = await productService.GetAll();
-                return Ok(products);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
-        }
+                ProductFilter filter = new ProductFilter(productId, name, minPrice, maxPrice);
+                OrderByFilter order = new OrderByFilter(orderBy, sortOrder);
+                PageFilter page = new PageFilter(rpp, pageNumber);
+                ICollection<Product> products = await productService.GetAsync(filter, order, page);
 
-        [HttpGet("products/{productId:guid}")]
-        public async Task<IActionResult> Get(Guid productId)
-        {
-            try
-            {
-                Product product = await productService.Get(productId);
-                return Ok(product);
+                return Ok(products);
             }
             catch (Exception ex)
             {
@@ -49,15 +40,15 @@ namespace Store.WebAPI.Controllers
         {
             if(product == null)
             {
-                return BadRequest();
+                return BadRequest("The product field is required.");
             }
             try
             {
-                int commitNumber = await productService.Post(product);
+                int commitNumber = await productService.PostAsync(product);
 
                 if(commitNumber == 0)
                 {
-                    return BadRequest();
+                    return BadRequest("Failed to add the product.");
                 }
                 return Ok("Product added successfully.");
             }
@@ -77,7 +68,7 @@ namespace Store.WebAPI.Controllers
             }
             try
             {
-                int commitNumber = await productService.Put(product, productId);
+                int commitNumber = await productService.PutAsync(product, productId);
                 if (commitNumber == 0)
                 {
                     return BadRequest();
@@ -96,7 +87,7 @@ namespace Store.WebAPI.Controllers
         {
             try
             {
-                int commitNumber = await productService.Delete(productId);
+                int commitNumber = await productService.DeleteAsync(productId);
                 if (commitNumber == 0)
                 {
                     return BadRequest();

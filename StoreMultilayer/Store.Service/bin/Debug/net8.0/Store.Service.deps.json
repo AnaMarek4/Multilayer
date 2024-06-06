@@ -85,6 +85,15 @@
       "System.Memory/4.5.1": {},
       "System.Runtime.CompilerServices.Unsafe/4.5.1": {},
       "System.Text.Encodings.Web/4.5.0": {},
+      "Store.Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Npgsql": "8.0.3"
+        },
+        "runtime": {
+          "Store.Common.dll": {}
+        }
+      },
       "Store.Model/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -98,6 +107,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Npgsql": "8.0.3",
+          "Store.Common": "1.0.0",
+          "Store.Model": "1.0.0",
           "Store.Repository.Common": "1.0.0"
         },
         "runtime": {
@@ -194,6 +205,11 @@
       "sha512": "sha512-Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
       "path": "system.text.encodings.web/4.5.0",
       "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
+    },
+    "Store.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Store.Model/1.0.0": {
       "type": "project",

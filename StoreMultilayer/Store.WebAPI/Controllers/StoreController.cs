@@ -21,7 +21,7 @@ namespace Store.WebAPI.Controllers
         {
             try
             {
-                ICollection<StoreM> stores = await storeService.GetAll();
+                ICollection<StoreM> stores = await storeService.GetAllAsync();
                 return Ok(stores);
             }
             catch (Exception ex)

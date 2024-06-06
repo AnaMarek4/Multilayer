@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Store.Common;
 using Store.Model;
 using Store.Repository;
 using Store.Service.Common;
@@ -22,29 +23,34 @@ namespace Store.Service
             this.productRepository = productRepository;
         }
 
-        public async Task<int> Delete(Guid id)
+        public async Task<int> DeleteAsync(Guid id)
         {
-            return await productRepository.Delete(id);
+            return await productRepository.DeleteAsync(id);
         }
 
-        public async Task<Product> Get(Guid id)
+        public async Task<Product> GetAsync(Guid id)
         {
-            return await productRepository.Get(id);
+            return await productRepository.GetAsync(id);
         }
 
-        public async Task<ICollection<Product>> GetAll()
+        public async Task<ICollection<Product>> GetAsync(ProductFilter filter, OrderByFilter order, PageFilter page)
         {
-            return await productRepository.GetAll();
+            return await productRepository.GetAsync(filter, order, page);
         }
 
-        public async Task<int> Post(Product product)
+        public async Task<ICollection<Product>> GetAllAsync()
         {
-            return await productRepository.Post(product);
+            return await productRepository.GetAllAsync();
         }
 
-        public async Task<int> Put(Product product, Guid id)
+        public async Task<int> PostAsync(Product product)
         {
-            return await productRepository.Put(product, id);
+            return await productRepository.PostAsync(product);
+        }
+
+        public async Task<int> PutAsync(Product product, Guid id)
+        {
+            return await productRepository.PutAsync(product, id);
         }
     }
 }

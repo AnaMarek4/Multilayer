@@ -16,3 +16,5 @@ D:\Multilayer\StoreMultilayer\Store.Repository\obj\Debug\net8.0\Store.Repository
 D:\Multilayer\StoreMultilayer\Store.Repository\obj\Debug\net8.0\refint\Store.Repository.dll
 D:\Multilayer\StoreMultilayer\Store.Repository\obj\Debug\net8.0\Store.Repository.pdb
 D:\Multilayer\StoreMultilayer\Store.Repository\obj\Debug\net8.0\ref\Store.Repository.dll
+D:\Multilayer\StoreMultilayer\Store.Repository\bin\Debug\net8.0\Store.Common.dll
+D:\Multilayer\StoreMultilayer\Store.Repository\bin\Debug\net8.0\Store.Common.pdb

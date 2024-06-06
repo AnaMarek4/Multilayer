@@ -42,3 +42,5 @@ D:\Multilayer\StoreMultilayer\Store.WebAPI\obj\Debug\net8.0\Store.WebAPI.pdb
 D:\Multilayer\StoreMultilayer\Store.WebAPI\obj\Debug\net8.0\Store.WebAPI.genruntimeconfig.cache
 D:\Multilayer\StoreMultilayer\Store.WebAPI\obj\Debug\net8.0\ref\Store.WebAPI.dll
 D:\Multilayer\StoreMultilayer\Store.WebAPI\obj\Debug\net8.0\Store.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Multilayer\StoreMultilayer\Store.WebAPI\bin\Debug\net8.0\Store.Common.dll
+D:\Multilayer\StoreMultilayer\Store.WebAPI\bin\Debug\net8.0\Store.Common.pdb

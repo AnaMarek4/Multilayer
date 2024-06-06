@@ -4,6 +4,7 @@ using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
 using Npgsql;
+using Store.Common;
 using Store.Model;
 using Store.Repository.Common;
 
@@ -18,17 +19,17 @@ namespace Store.Repository
             this.connectionString = connectionString;
         }
 
-        public Task<int> Delete(Guid id)
+        public Task<int> DeleteAsync(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<StoreM> Get(Guid id)
+        public Task<StoreM> GetAsync(Guid id)
         {
             throw new NotImplementedException();    
         }
 
-        public async Task<ICollection<StoreM>> GetAll()
+        public async Task<ICollection<StoreM>> GetAllAsync()
         {
             using NpgsqlConnection conn = new NpgsqlConnection(connectionString);
             using NpgsqlCommand command = new NpgsqlCommand("", conn);
@@ -73,7 +74,7 @@ namespace Store.Repository
                                 StoreId = storeId,
                                 Name = reader.GetString(11),
                                 Price = reader.GetDouble(12),
-                                //ExpirationDate = reader.GetDateTime(13),
+                                ExpirationDate = reader.IsDBNull(4) ? (DateOnly?)null : reader.GetDateTime(4).ToDateOnly(),
                                 IsActive = reader.GetBoolean(14),
                                 DateCreated = reader.GetDateTime(15),
                                 DateUpdated = reader.GetDateTime(16),
@@ -93,7 +94,7 @@ namespace Store.Repository
                             StoreId = reader.GetGuid(10),
                             Name = reader.GetString(11),
                             Price = reader.GetDouble(12),
-                            //ExpirationDate = reader.GetDateTime(13),
+                            ExpirationDate = reader.IsDBNull(4) ? (DateOnly?)null : reader.GetDateTime(4).ToDateOnly(),
                             IsActive = reader.GetBoolean(14),
                             DateCreated = reader.GetDateTime(15),
                             DateUpdated = reader.GetDateTime(16),
@@ -109,12 +110,12 @@ namespace Store.Repository
             return stores;
         }
 
-        public Task<int> Post(Product product)
+        public Task<int> PostAsync(Product product)
         {
             throw new NotImplementedException();
         }
 
-        public Task<int> Put(Product product, Guid id)
+        public Task<int> PutAsync(Product product, Guid id)
         {
             throw new NotImplementedException(); 
         }

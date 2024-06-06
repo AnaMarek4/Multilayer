@@ -16,27 +16,27 @@ namespace Store.Service
             storeRepository = new StoreRepository(connectionString);
         }
 
-        public Task<int> Delete(Guid id)
+        public Task<int> DeleteAsync(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<StoreM> Get(Guid id)
+        public Task<StoreM> GetAsync(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<ICollection<StoreM>> GetAll()
+        public Task<ICollection<StoreM>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<int> Post(Product product)
+        public Task<int> PostAsync(Product product)
         {
             throw new NotImplementedException();
         }
 
-        public Task<int> Put(Product product, Guid id)
+        public Task<int> PutAsync(Product product, Guid id)
         {
             throw new NotImplementedException();
         }
