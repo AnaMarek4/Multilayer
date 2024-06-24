@@ -1,32 +1,31 @@
-DROP TABLE IF EXISTS "Product";
-DROP TABLE IF EXISTS "Store";
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
-CREATE TABLE "Store" (
-    "Id" UUID NOT NULL DEFAULT uuid_generate_v4() PRIMARY KEY,
-    "Name" VARCHAR(255) NOT NULL,
-    "Address" VARCHAR(255) NOT NULL,
-	"PhoneNumber" VARCHAR(10) NOT NULL,
-	"IsActive" BOOLEAN NOT NULL DEFAULT TRUE,
-	"DateCreated" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	"DateUpdated" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	"CreatedByUserId" INT NOT NULL,
-	"UpdatedByUserId" INT NOT NULL
+CREATE TABLE "Category" (
+    "Id" UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    "Name" VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE "Product" (
-    "Id" UUID NOT NULL DEFAULT uuid_generate_v4() PRIMARY KEY,
-	"StoreId" UUID,
+    "Id" UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     "Name" VARCHAR(255) NOT NULL,
-    "Price" NUMERIC (4,2) NOT NULL,
-	"ExpirationDate" DATE NOT NULL,
-	"IsActive" BOOLEAN NOT NULL DEFAULT TRUE,
-	"DateCreated" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	"DateUpdated" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	"CreatedByUserId" INT NOT NULL,
-	"UpdatedByUserId" INT NOT NULL,
-    CONSTRAINT "FK_Product_Store_StoreId" 
-		FOREIGN KEY ("StoreId") 
-		REFERENCES "Store"("Id")
+    "Price" DECIMAL(10, 2) NOT NULL,
+    "CategoryId" UUID ,
+    "IsActive" BOOLEAN NOT NULL,
+    "DateCreated" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "DateUpdated" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "CreatedByUserId" UUID,
+    "UpdatedByUserId" UUID,
+    CONSTRAINT "FK_Product_Category_CategoryId" FOREIGN KEY ("CategoryId") REFERENCES "Category" ("Id")
+);
+
+CREATE TABLE "Review" (
+    "Id" UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    "Description" VARCHAR(255) NOT NULL,
+    "Rating" INT,
+    "IsActive" BOOLEAN NOT NULL,
+    "DateCreated" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "DateUpdated" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "CreatedByUserId" UUID,
+    "UpdatedByUserId" UUID
 );
 
